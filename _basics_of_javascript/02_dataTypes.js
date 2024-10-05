@@ -4,7 +4,7 @@
 
 // remember : code readability should be good/high enough.
 
-let name = "jeetuSingh" // string
+let name = "jeetuSingh"// string
 let age = 20 // number
 let isLoggedIn = false // boolean
 let state; // undefined
@@ -19,4 +19,7 @@ let state; // undefined
 
 // object
 
-console.log(typeof age)
+console.log(typeof age); // number
+console.log(typeof isLoggedIn); // boolean
+console.log(typeof null); // object
+
