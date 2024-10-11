@@ -29,7 +29,7 @@ const newStringOne = "   removalSpace    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
-const url = "https://prototype.com/theme_prototype"
+const url = "https://prototype.com/theme%20prototype"
 
 console.log(url.replace('%20', '-'))
 
