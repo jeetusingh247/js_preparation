@@ -18,6 +18,19 @@ const rishi_muni = ["ashtavakra", "aaryabahtta", "dronacharya", "rishiVashisth"]
 // console.log(ano_arr);
 // console.log(bc_arr) // --> values are auto spreadOut
 
+console.log(Array.isArray("Jeetu")) // --> false
+console.log(Array.from("Jeetu")); // --> [ 'J', 'e', 'e', 't', 'u' ]
+console.log(Array.from({name: "Jeetu"})); // emptyarray --> interesting
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3)) // gives combined values in array
+
+
+
+
 
 
 
