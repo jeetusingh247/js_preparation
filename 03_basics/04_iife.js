@@ -1,11 +1,11 @@
 // Immediately Invoked Function Expressions (IIFE)
 
 
-(function chai(){
+(function naam(){
     // named IIFE
     console.log(`DB CONNECTED`);
-})();
+})(); // used to avoid global scope problem/pollution
 
-( (name) => {
+( (name) => { // unamed IIFE
     console.log(`DB CONNECTED TWO ${name}`);
 } )('Jsingh')

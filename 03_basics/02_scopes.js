@@ -1,15 +1,15 @@
 //var c = 300
-let a = 300
+let a = 300   // --> global scope
 if (true) {
     let a = 10
-    const b = 20
-    // console.log("INNER: ", a);
+    const b = 20 // --> block scope
+    // console.log("INNER: ", a); // --> block scope
     
 }
 
 
 
-// console.log(a);
+// console.log(a); // --> global scope
 // console.log(b);
 // console.log(c);
 
@@ -19,7 +19,7 @@ function one(){
 
     function two(){
         const website = "mailPrep"
-        console.log(username);
+        console.log(username); // --> child func can access parent func variables
     }
     // console.log(website);
 
@@ -31,8 +31,8 @@ function one(){
 
 if (true) {
     const username = "Jsingh"
-    if (username === "mailPrep") {
-        const website = " mailPrep"
+    if (username === "Jsingh") {
+        const website = "PrepBuddy"
         // console.log(username + website);
     }
     // console.log(website);
@@ -46,13 +46,13 @@ if (true) {
 
 console.log(addone(5))
 
-function addone(num){
-    return num + 1
+function addone(num){  // --> Case 1
+    return num + 1     
 }
 
 
 
 addTwo(5)
-const addTwo = function(num){
-    return num + 2
+const addTwo = function(num){    // --> Case 2
+    return num + 2      // --> throws error
 }

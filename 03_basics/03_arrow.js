@@ -4,9 +4,8 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        console.log(this); // --> "this" is used to refer current context
     }
-
 }
 
 // user.welcomeMessage()
@@ -15,33 +14,32 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
+// function naam(){
 //     let username = "JeetuSingh"
 //     console.log(this.username);
 // }
 
-// chai()
+// naam()
 
-// const chai = function () {
+// const naam = function () {
 //     let username = "JeetuSingh"
 //     console.log(this.username);
 // }
 
-const chai =  () => {
+const naam =  () => { // --> arrow function
     let username = "JeetuSingh"
     console.log(this);
 }
 
-
-// chai()
+// naam()
 
 // const addTwo = (num1, num2) => {
-//     return num1 + num2
+//     return num1 + num2     // --> explicit return
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// const addTwo = (num1, num2) =>  num1 + num2 // --> implicit return
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => ( num1 + num2 ) // --> return not needed
 
 const addTwo = (num1, num2) => ({username: "JeetuSingh"})
 
